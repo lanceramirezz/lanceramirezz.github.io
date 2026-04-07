@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lance's Plumbing Services</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #1e1e1e;
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #2a6496;
+    }
+
+    header h1 {
+      color: #4da6e8;
+      font-size: 1.6rem;
+    }
+
+    nav a {
+      color: #a0c8e8;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #1a3a5c, #2a6496);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 32px;
+      opacity: 0.9;
+    }
+
+    .hero a {
+      background-color: #4da6e8;
+      color: #ffffff;
+      padding: 14px 32px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .hero a:hover {
+      background-color: #3a8fd1;
+    }
+
+    /* SERVICES */
+    .services {
+      padding: 60px 40px;
+      text-align: center;
+      background-color: #1a1a1a;
+    }
+
+    .services h3 {
+      font-size: 2rem;
+      color: #4da6e8;
+      margin-bottom: 40px;
+    }
+
+    .service-grid {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .service-card {
+      background-color: #242424;
+      border: 2px solid #2a6496;
+      border-radius: 10px;
+      padding: 30px 24px;
+      width: 220px;
+      text-align: center;
+    }
+
+    .service-card .icon {
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+    }
+
+    .service-card h4 {
+      font-size: 1.1rem;
+      color: #4da6e8;
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      color: #aaaaaa;
+    }
+
+    /* WHY US */
+    .why-us {
+      padding: 60px 40px;
+      text-align: center;
+      background-color: #121212;
+    }
+
+    .why-us h3 {
+      font-size: 2rem;
+      color: #4da6e8;
+      margin-bottom: 40px;
+    }
+
+    .why-grid {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .why-card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 24px;
+      width: 200px;
+    }
+
+    .why-card .icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .why-card p {
+      font-size: 0.95rem;
+      color: #cccccc;
+    }
+
+    /* CONTACT */
+    .contact {
+      background-color: #1a3a5c;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .contact h3 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .contact p {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      opacity: 0.9;
+    }
+
+    .contact a {
+      color: #a0d4f5;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      color: #ffffff;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #0a0a0a;
+      color: #666666;
+      text-align: center;
+      padding: 16px;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🔧 Lance's Plumbing</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Fast, Reliable Plumbing Services</h2>
+    <p>Available 24/7 for all your plumbing needs — big or small.</p>
+    <a href="#contact">Call Us Now</a>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <h3>Our Services</h3>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="icon">🚿</div>
+        <h4>Pipe Repair</h4>
+        <p>Fixing leaks and burst pipes quickly and efficiently.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🚽</div>
+        <h4>Drain Cleaning</h4>
+        <p>Clearing clogged drains in kitchens and bathrooms.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🌡️</div>
+        <h4>Water Heaters</h4>
+        <p>Installation and repair of all water heater types.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🏠</div>
+        <h4>Full Installations</h4>
+        <p>New plumbing for remodels and new constructions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why-us" id="why-us">
+    <h3>Why Choose Us?</h3>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="icon">⚡</div>
+        <p>Same-day service available</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">🛡️</div>
+        <p>Licensed & insured professionals</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">💰</div>
+        <p>Upfront, honest pricing</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">⭐</div>
+        <p>5-star rated service</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h3>Contact Us</h3>
+    <p>Call or email us anytime — we're available 24/7!</p>
+    <p>📞 <a href="tel:+15551234567">(555) 123-4567</a></p>
+    <p>📧 <a href="mailto:lanceramirez25@gmail.com">lanceramirez25@gmail.com</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Lance's Plumbing Services. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
